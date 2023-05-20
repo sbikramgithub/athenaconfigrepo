@@ -84,12 +84,12 @@ spring:
     hibernate:
       ddl-auto: update
 store:
-    storeNo: 400
-    storeName: Apollo pharmacy
-    storeManager: Anwesh
+    storeNo: 600
+    storeName: Meddibuddy pharmacy
+    storeManager: Bikram
     openHours: 08
     openMinues: 30
     closingHours: 11
     closingMinutes: 00
-    location: "Rourkela, Odisha"
+    locations: "Rourkela, Odisha"
 ...
