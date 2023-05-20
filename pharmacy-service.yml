@@ -84,7 +84,7 @@ spring:
     hibernate:
       ddl-auto: update
 store:
-    storeNo: 600
+    storeNo: 700
     storeName: Meddibuddy pharmacy
     storeManager: Bikram
     openHours: 08
