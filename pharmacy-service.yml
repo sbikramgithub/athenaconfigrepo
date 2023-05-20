@@ -1,0 +1,81 @@
+---
+spring:
+  config:
+    activate:
+      on-profile:
+      - dev
+  datasource:
+    url: jdbc:mysql:///pharmacydb
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    show-sql: true
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+store:
+    storeNo: 500
+    storeName: Krishna pharmacy
+    storeManager: Deepak
+    openHours: 9
+    openMinues: 00
+    closingHours: 11
+    closingMinutes: 00
+    location: "Bhubaneswar, Odisha"
+...
+---
+spring:
+  config:
+    activate:
+      on-profile:
+      - prod
+  datasource:
+    url: jdbc:mysql:///pharmacydb
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    show-sql: true
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+store:
+    storeNo: 300
+    storeName: medplus pharmacy
+    storeManager: Greg
+    openHours: 9
+    openMinues: 30
+    closingHours: 10
+    closingMinutes: 00
+    location: "Ameerpet, hyderabad"
+...
+---
+spring:
+  config:
+    activate:
+      on-profile:
+      - test
+  datasource:
+    url: jdbc:mysql:///pharmacydb
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    show-sql: true
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+store:
+    storeNo: 400
+    storeName: Apollo pharmacy
+    storeManager: Anwesh
+    openHours: 08
+    openMinues: 30
+    closingHours: 11
+    closingMinutes: 00
+    location: "Rourkela, Odisha"
+...
